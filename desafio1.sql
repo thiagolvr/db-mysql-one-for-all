@@ -71,14 +71,14 @@ INSERT INTO
     SpotifyClone.song (name_song, duration_song, id_album, id_artist)
 VALUES
     ('BREAK MY SOUL', 279, 1, 1),
-    ("VIRGO'S GROOVE", 369, 1, 1),
+    ("VIRGO’S GROOVE", 369, 1, 1),
     ('ALIEN SUPERSTAR', 116, 1, 1),
-    ("Don't Stop Me Now", 203, 2, 2),
+    ("Don’t Stop Me Now", 203, 2, 2),
     ('Under Pressure', 152, 3, 2),
     ('Como Nossos Pais', 105, 4, 3),
     ('O Medo de Amar é o Medo de Ser Livre', 207, 5, 3),
     ('Samba em Paris', 267, 6, 4),
-    ("The Bard's Song", 244, 7, 5),
+    ("The Bard’s Song", 244, 7, 5),
     ('Feeling Good', 100, 8, 6);
 
 CREATE TABLE
@@ -107,7 +107,7 @@ VALUES
 
 CREATE TABLE
     IF NOT EXISTS SpotifyClone.history (
-        date_history DATE NOT NULL,
+        date_history DATETIME NOT NULL,
         id_song INT,
         id_user INT,
         FOREIGN KEY (id_song) REFERENCES song (id_song),
